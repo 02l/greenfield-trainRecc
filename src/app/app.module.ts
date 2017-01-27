@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SongFormComponent } from './song-form/song-form.component';
 
-import { ApiService } from './song-form/api.service';
+import { ApiService } from './services/api.service';
 import { LoginComponent } from './login/login.component';
 import { FormComponent } from './login/form/form.component';
 import { SignupComponent } from './login/signup/signup.component';
