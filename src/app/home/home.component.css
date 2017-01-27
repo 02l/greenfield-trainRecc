@@ -79,6 +79,7 @@
 }
 
 .song {
+  cursor: pointer;
   border-bottom: 1px ridge grey;
   margin-bottom: 1px;
 }

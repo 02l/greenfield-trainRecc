@@ -1,8 +1,8 @@
 
 <md-list id="listwrap" >
   <span class='bg'> </span>
-  <md-list *ngFor='let train of trains' class='train'>
-      <img class='trainImg' [src]='train.imgUrl'>
+  <md-list *ngFor='let train of trains' class='train' ng-init="console()">
+      <img class='trainImg'  [src]='train.trainImg'>
       <div *ngFor='let song of train.songs' id='songlist'>
           <div class="sm2-bar-ui compact">
 
@@ -63,6 +63,7 @@
             </div>
           </div>
         </div>
+        <div class='link' ></div>
       </div>
   </md-list>
 </md-list>
