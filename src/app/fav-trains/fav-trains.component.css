@@ -1,33 +1,62 @@
 .trainImg {
-    width: 10%;
-    height: 100%;
+    width: 7%;
+    height: 99%;
+    inline-size: auto;
 }
 
 .train li {
     text-decoration: none;
 }
 
+.sm2-inline-gradient {
+    position: relative;
+}
+
+.sm2-bar-ui > .bd {
+    border-radius: 8px;
+}
+
 .train {
     overflow: scroll;
     width: 100%;
-    height: 10%;
-    border: 1px solid red;
+    height: 7%;
+    border-bottom: 1px groove lightslategray;
     white-space: nowrap;
     text-decoration: none;
 }
 
 #songlist {
     display: inline-block;
-    text-decoration: none;
+    width: 100%;
+}
+
+.s1 {
+    display: inline-block;
+}
+
+md-list {
+    padding-top: 0px;
+}
+
+.bg {
+    background-color: ghostwhite;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
 }
 
 #listwrap {
-    width: 40%;
+    width: 45%;
+    height: 500px;
     display: inline-block;
-    margin-left: 10%;
+    margin-top: 7%;
+    white-space: nowrap;
+    overflow: scroll;
+    margin-left:33%;
     border: groove;
     border-color: darkred;
-    text-decoration: none;
+    border-radius: 10px;
+    position: fixed;
 }
 
 .sm2-bar-ui {
@@ -38,9 +67,5 @@
  background-color: #b54645;
 }
 .sm2-bar-ui .sm2-inline-texture {
- background: url(image/patterns/textured_paper.png);
-}
-
-.list {
-    text-decoration: none;
+ background-image: url(pap.png);
 }

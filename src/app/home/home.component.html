@@ -3,23 +3,37 @@
 <md-card  class='killme'>
 
     <md-input-container width="100%">
-      <textarea md-input placeholder="Train Name" value=""></textarea>
+      <textarea md-input placeholder="Train Name" value="" [(ngModel)]="trainName" ></textarea>
     </md-input-container>
 
     <md-input-container width="100%">
-      <textarea md-input placeholder="Train Image Url"></textarea>
+      <textarea md-input placeholder="Train Image Url" [(ngModel)]="trainImgPath">></textarea>
     </md-input-container>
 
     <md-input-container width="100%">
-      <textarea md-input placeholder="Train Tags"></textarea>
+      <textarea md-input placeholder="Train Tags" [(ngModel)]="trainTags"></textarea>
     </md-input-container>
 
-    <md-input-container width="100%">
-      <textarea md-input placeholder="Intro Song"></textarea>
-    </md-input-container>
+    <div class="selected-song" id="slist">
+        <p>
+        {{selectedTrack.artist}}{{selectedTrack.ph}}
+        {{selectedTrack.song}}
+        </p>
+    </div>
 
-    <button md-raised-button color='warn' routerLink="" class='login' > Submit </button>
+    <button md-raised-button color='warn' routerLink="" (click)="createTrain()" class='login' > Submit </button>
 
+</md-card>
+
+<md-card class='searches'>
+    <input placeholder="Search for song" [(ngModel)]="songToSearch">
+        <button md-raised-button color='warn' class='login2' (click)="searchForSong()">Search</button>
+        <md-list id="slist">
+        <div class="song" (click)="firstSongInTrain(i)" *ngFor="let songResult of songResults; let i = index; trackBy: trackByFn">
+            <p>{{songResult.artist}}</p>
+            <p>{{songResult.song}}</p>
+        </div>
+        </md-list>
 </md-card>
 
 <app-fav-trains></app-fav-trains>

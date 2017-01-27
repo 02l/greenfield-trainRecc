@@ -1,11 +1,9 @@
 
-<md-list id="listwrap">
+<md-list id="listwrap" >
+  <span class='bg'> </span>
   <md-list *ngFor='let train of trains' class='train'>
-    <div>
       <img class='trainImg' [src]='train.imgUrl'>
-      {{train.name}}
       <div *ngFor='let song of train.songs' id='songlist'>
-        <div>
           <div class="sm2-bar-ui compact">
 
           <div class="bd sm2-main-controls">
@@ -64,9 +62,7 @@
               </ul>
             </div>
           </div>
-          </div>
         </div>
       </div>
-    </div>
   </md-list>
 </md-list>
